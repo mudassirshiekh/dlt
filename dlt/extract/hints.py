@@ -1,4 +1,4 @@
-from typing import cast, Any, Optional, Dict, Sequence, Mapping, Union
+from typing import cast, Any, Optional, Dict, Sequence, Mapping, Union, NamedTuple
 from typing_extensions import Self
 
 from dlt.common import logger
@@ -80,8 +80,9 @@ class HintsMeta:
         self.create_table_variant = create_table_variant
 
 
-class ModelStr(str):
-    pass
+class SqlModel(NamedTuple):
+    query: str
+    dialect: Optional[str] = None
 
 
 NATURAL_CALLABLES = ["incremental", "validator", "original_columns"]
