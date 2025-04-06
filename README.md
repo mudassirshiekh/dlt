@@ -71,6 +71,7 @@ pipeline.run(data, table_name='player')
 Try it out in our **[Colab Demo](https://colab.research.google.com/drive/1NfSB1DpwbbHX9_t5vlalBTf13utwpMGx?usp=sharing)**
 
 ## Features
+## By Mudassir Alam
 
 - **Automatic Schema:** Data structure inspection and schema creation for the destination.
 - **Data Normalization:** Consistent and verified data before loading.
